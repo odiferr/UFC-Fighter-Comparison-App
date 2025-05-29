@@ -23,9 +23,9 @@ But it's way more than just comparisons. You can:
 - **Fighter Records**: Every fighter's complete UFC record with win/loss ratios and finish rates
 
 ### Smart Features
-- **Fuzzy Search**: Type "McGreggor" and it finds "McGregor" - works even with misspellings
+- **Fuzzy Search**: works well with misspellings 
 - **Statistical Leaders**: See who leads each weight class in categories like most knockouts, highest takedown accuracy, or best striking defense
-- **Mobile Friendly**: Works perfectly on your phone for settling debates anywhere
+- **Mobile Friendly**: Works on your phone for accessing data anywhere
 
 ## Why I Built This
 
@@ -37,7 +37,7 @@ As an MMA fan, I was constantly frustrated trying to compare fighters. I'd have 
 
 Most MMA sites either had outdated information, terrible mobile experiences, or made you dig through endless tables of numbers. I wanted something that could instantly show me "McGregor hits 4.5 strikes per minute vs Khabib's 3.1" with a visual that made sense.
 
-Plus, I thought building a full-stack app around something I'm passionate about would be wa
+Plus, I thought building a full-stack app around something I'm passionate about
 
 ### Key Features
 - **Fighter Comparisons**: Compare striking, grappling, and defense stats with cool radar charts
@@ -69,7 +69,7 @@ Plus, I thought it would be a cool way to combine my love of MMA with learning f
 ### The Data Pipeline
 Every week, my app automatically:
 1. **Scrapes** the latest fighter stats from public MMA sources
-2. **Cleans** the messy data (trust me, it's messy)  
+2. **Cleans** the messy data 
 3. **Updates** the database with fresh numbers
 4. **Caches** everything for fast loading
 
@@ -80,36 +80,23 @@ This means you always get current stats without me having to manually update tho
 Building this taught me a ton about:
 - **Full-stack development** 
 - **Data scraping and cleaning** 
-- **Cloud deployment** (AWS, Heroku, all that jazz)
+- **Cloud deployment** (AWS, and Heroku)
 - **Performance optimization** 
 - **User experience**
 
 ## Technical Details
 
 ### Database Structure
-- **Fighter Stats**: 2,400+ fighters with 50+ statistical categories
+- **Fighter Stats**: 2,400+ fighters with 50+ statistical categories and  9,000+ fights from 1996 to present 
 - **Events**: Upcoming fight cards and schedules  
 - **Rankings**: Official UFC rankings by weight class
 - **Eligibility Rules**: Smart filtering to avoid ambiguous stats
 
-### Cool Features I'm Proud Of
-- **Fuzzy Search**: Type "McGreggor" and it finds "McGregor" 
-- **Responsive Design**: Looks good on phones and computers
-- **Error Handling**: Graceful fallbacks when things break
-- **Caching**: Sub-second load times for comparisons
-- **Data Validation**: Prevents wonky stats from ruining everything
 
-## Challenges I Solved
-
-1. **Inconsistent Data**: MMA websites aren't built for scraping, so I had to get creative
-2. **Performance**: Comparing fighters with 50+ stats needs to be fast
-3. **Mobile UX**: Making complex charts work on small screens
-4. **Data Quality**: Filtering out misleading stats (like 100% accuracy from 2 attempts)
-5. **Reliability**: Building fallbacks for when external sites change
 
 ## Screenshots
 
-*see the screenshots folder*
+*see screenshots*
 - Fighter comparison with radar charts
 - Statistical leaders page  
 - UFC rankings
